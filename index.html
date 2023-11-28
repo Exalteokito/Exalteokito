@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c3b7d40d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Exalte Okitokenge</h1>
+                <p>Fullstack Developer</p>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-----About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/for_P2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a recent computer science graduate with a passion for crafting digital experiences, My journey into the tech world began at SupremWorxit, where I had the fantastic opportunity to serve as a front-end developer and UI/UX designer during my internship.
+                        Fresh out of university, I'm eager to apply the skills and knowledge gained in my academic journey to real-world projects. At SupremWorxit, I immersed myself in the dynamic realm of front-end development, bringing designs to life and delving into the intricacies of user interface and experience design.
+                        
+                        My enthusiasm for technology extends to both the front and back ends of web development, making me a budding full-stack developer. While I may be at the start of my professional journey, I'm fueled by a commitment to continuous learning and a drive to create solutions that not only meet but exceed expectations.
+                        
+                        I believe in the power of collaboration and effective communication to turn ideas into reality. I'm excited to contribute my skills and creativity to projects that push boundaries and make a meaningful impact.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> SKills</p>
+                        <p class="tab-links"onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links"onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Designing responsive, user-friendly web interfaces.</li>
+                            <li><span>UI/UX Design</span><br>Crafting intuitive,visually striking digital interfaces for enhanced user interactions.</li>
+                            <li><span>Full-Stack Development</span><br>Unifying interface finesse and server-side functionality for comprehensive web application excellence.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun 2023 - Dec 2023</span><br>Software Developer Intern at Supremeworxit, JHB.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Feb 2020 - Dec 2023</span><br>Bachelor of Science in Computer Science at Eduvos in South Africa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Interactive Web Design</h2>
+                    <p>As an Interactive Web Designer, I specialize in creating dynamic and engaging online experiences that captivate users from the moment they land on a website.
+                        Through a meticulous blend of creative design and cutting-edge technologies, I bring static web pages to life, fostering user interaction and exploration. 
+                        Every element I craft is carefully considered to not only be aesthetically pleasing but also intuitively responsive, ensuring a seamless and enjoyable journey for visitors. 
+                        By pushing the boundaries of conventional design, I aim to deliver websites that not only meet functional requirements but also leave a lasting impression, transforming online presence into an immersive and interactive encounter.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-check"></i>
+                    <h2>User-Centric UI/UX Design</h2>
+                    <p>In the realm of User-Centric UI/UX Design, my focus is on creating digital interfaces that prioritize the needs and desires of the end user. 
+                        Through a deep understanding of user behavior and a keen eye for design aesthetics, I craft interfaces that seamlessly integrate form and function.
+                    Every aspect of the user journey is meticulously planned and executed, from the first visual impression to the last interactive element.
+                    By fostering a sense of usability and delight, my UI/UX designs contribute to enhanced user satisfaction and loyalty.
+                    I strive to not only meet user expectations but to exceed them, ensuring that each digital interaction is intuitive, visually appealing, and leaves a positive lasting impression.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h2>App Development</h2>
+                    <p>In the realm of Comprehensive Web Development, I offer end-to-end solutions that encompass the entire spectrum of web application creation.
+                        From the initial concept and front-end design to the back-end server-side functionality, my approach ensures a cohesive and seamless digital experience. 
+                        By combining my skills in both front-end and back-end development, I bridge the gap between design finesse and technical robustness. 
+                        This holistic approach results in web applications that not only look visually appealing but also perform with excellence. 
+                        I handle the intricacies of databases, server logic, and responsive design to create websites and applications that stand out in today's competitive digital landscape. 
+                        My commitment to comprehensive web development goes beyond meeting expectations — it's about delivering innovative, high-quality, and user-centric solutions that propel businesses forward in the digital age.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----My work----->
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/Imwoks.jpg" alt width="400px" height="400px" >
+                   <div class="layer">
+                    <h3>IAMWORX</h3>
+                    <p>A leading web app using advanced algorithms to suggest the ideal Information Access Management system for organizations, 
+                        and prioritizing enhanced digital identity and access protocols with a steadfast commitment to security.</p>
+                        <a href="https://iamworx.primaveraconcepts.co.za/"><i class="fa-solid fa-link"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="images/Multi.jpg" alt width="400px" height="400px" >
+                    <div class="layer">
+                        <h3>MULTIPLEX CONGO</h3>
+                    <p>A dynamic online store, offering a curated collection of jerseys and customizable apparel.</p>
+                            <a href="https://iamworx.primaveraconcepts.co.za/"><i class="fa-solid fa-link"></i></a>
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/running.jpg" alt width="400px" height="400px">
+                    <div class="layer">
+                        <h3>COGNIKICK COACHES</h3>
+                        <p> An online platform that redefines coaching services for personal and professional development..</p>
+                            <a href="https://iamworx.primaveraconcepts.co.za/"><i class="fa-solid fa-link"></i></a>
+                       </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!------contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>exalteokito@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+27760790419</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.Instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/ExalteCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOSCIUpTlTtPYSyCLDfAAfigTr_GHv5RprCzDR-ZebpVvXyTB_UN3Kn0g5FfAJx9VZiA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
